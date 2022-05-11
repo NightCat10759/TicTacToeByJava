@@ -12,6 +12,8 @@
 * Player:
 
   * input your name to modify your nickname.
+
+* set your symbol:
   * you can choose your own symbol to represent yourself.
   
 
