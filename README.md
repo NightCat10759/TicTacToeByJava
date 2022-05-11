@@ -1,1 +1,34 @@
 # TicTacToe
+  TicTacToe made by java , purpose to practice practical java skills and java data structure.
+  
+
+## Features
+* [Content](#content)
+* [How-to-run-this-app](#how-to-run-this-app)
+
+
+## Content
+
+* Player:
+
+  * input your name to modify your nickname.
+  * you can choose your own symbol to represent yourself.
+  
+
+* board:
+  * in the begining on game.you will see left side have a empty board with "-",and right side has a board which is a board position hint.
+  * key in A-I. choose the position on the hint board.
+  
+
+* try agin:
+
+  * if you wanna try again just to key in any words to restart game.
+
+
+## How-to-run-this-app
+
+    with java ide or download java JDK to execute the file.
+    ```
+    https://www.oracle.com/java/technologies/downloads/
+    ```
+
