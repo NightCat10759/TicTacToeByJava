@@ -27,7 +27,8 @@
 
 ## How-to-run-this-app
 
-    with java ide or download java JDK to execute the file.
+  * with java ide or download java JDK to execute the file.
+    
     ```
     https://www.oracle.com/java/technologies/downloads/
     ```
