@@ -16,7 +16,7 @@
   
 
 * board:
-  * in the begining on game.you will see left side has a empty board with "-",and right side has a board which is a board position hint.
+  * in the begining on game.you will see left side has a empty board with "-",and right side has a board which is a position hint.
   * key in A-I. choose the position on the rightside hint board.
   
 
