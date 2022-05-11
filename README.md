@@ -19,7 +19,7 @@
   
 
 * board:
-  * in the begining on game.you will see left side has a empty board with "-",and right side has a board which is a position hint.
+  * at the begining of the game.you will see left side has a empty board with "-",and right side has a board which is a position hint.
   
 
 * try agin:
