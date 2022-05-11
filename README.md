@@ -12,14 +12,14 @@
 * Player:
 
   * input your name to modify your nickname.
-
-* set your symbol:
   * you can choose your own symbol to represent yourself.
+
+* How to play:
+  * key in A-I. choose the position on the rightside hint board to set your symbol.
   
 
 * board:
   * in the begining on game.you will see left side has a empty board with "-",and right side has a board which is a position hint.
-  * key in A-I. choose the position on the rightside hint board.
   
 
 * try agin:
