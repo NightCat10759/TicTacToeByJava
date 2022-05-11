@@ -17,7 +17,7 @@
 
 * board:
   * in the begining on game.you will see left side have a empty board with "-",and right side has a board which is a board position hint.
-  * key in A-I. choose the position on the hint board.
+  * key in A-I. choose the position on the rightside hint board.
   
 
 * try agin:
