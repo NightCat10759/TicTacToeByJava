@@ -27,7 +27,7 @@
   * try agin:
 
     * if you wanna try again just to key in any words to restart the game.
-    * if you wanna exit just to key in word "no"(lower or upper) to exit the game.
+    * if you wanna exit just to key in word "no"(whether lower or upper) to exit the game.
 
   * wining:
 
