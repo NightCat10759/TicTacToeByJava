@@ -12,9 +12,18 @@ public class Player {
     private char chess;
 
     private static int people = 0;
+    private int score = 0;
 
     public Player(){
         this.people ++;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void addScore() {
+        this.score++;
     }
 
     public void action(TicTacToe game){
@@ -208,6 +217,7 @@ public class Player {
             if (all_symbol_position.contains(PlayerPosition.E)){
                 if (all_symbol_position.contains(PlayerPosition.G)){
                     winingMessage();
+                    return true;
                 }
             }
         }
@@ -240,7 +250,7 @@ public class Player {
 
     public void reset(){
         all_symbol_position.clear();
-        this.people = 0;
+        System.out.println(all_symbol_position);
     }
 
     public void showinfo(){

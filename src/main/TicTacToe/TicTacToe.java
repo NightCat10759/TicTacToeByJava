@@ -1,5 +1,6 @@
 package main.TicTacToe;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -82,17 +83,57 @@ public class TicTacToe {
         }
     }
 
-    public void judge(Player player){
-        if (player.wining()){
-            System.out.println("do you wanna try again?");
-            String answer = input.nextLine();
-            if (answer.equals("No")){
-                exit();
-            } else {
-                // 清空數據和板子
-                player.reset();
-                initBoard();
+    public boolean checkfilled(Player player1, Player player2){
+        ArrayList<PlayerPosition> player1Position = player1.getAll_symbol_position();
+        ArrayList<PlayerPosition> player2Position = player2.getAll_symbol_position();
+
+        if ( (player1Position.size() + player2Position.size()) == this.getHeight() * this.getWidth() ) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean judge(Player player1, Player player2){
+
+        if (checkfilled(player1, player2)){
+            showBoard();
+            if (!tryAgain(player1, player2)){
+                return true;
             }
+        }
+
+        if (player1.wining() || player2.wining()){
+            if(player1.wining()){
+                player1.addScore();
+            }
+            if(player2.wining()){
+                player2.addScore();
+            }
+            showBoard();
+            System.out.println(player1.getName() + " score is: " + player1.getScore());
+            System.out.println(player2.getName() + " score is: " + player2.getScore());
+            if (!tryAgain(player1, player2)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean tryAgain(Player player1, Player player2){
+        System.out.println("do you wanna try again?(any or NO)");
+        String answer = input.nextLine();
+        answer = answer.toUpperCase();
+        System.out.println("answer: " + answer);
+        if (answer.equals("NO")){
+            System.out.println("Thanks for playing!!");
+            return exit();
+        } else {
+            System.out.println("Reset the score and table.");
+            // 清空數據和板子
+            player1.reset();
+            player2.reset();
+            initBoard();
+            return true;
         }
     }
 }

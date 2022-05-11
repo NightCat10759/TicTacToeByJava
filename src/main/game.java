@@ -20,19 +20,23 @@ public class game {
         Player2.setName();
         Player2.setChess();
 
-
+        // game loop
         while(true){
             game.showBoard();
 
             Player1.action(game);
 
-            game.judge(Player1);
+            if(game.judge(Player1, Player2)){
+                break;
+            }
 
             game.showBoard();
 
             Player2.action(game);
 
-            game.judge(Player2);
+            if(game.judge(Player1, Player2)){
+                break;
+            }
 
         }
 
